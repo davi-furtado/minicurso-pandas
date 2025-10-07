@@ -1,4 +1,6 @@
-# 🐼 Pandas na prática: usando Python para análise de dados
+# 🐼 Pandas
+
+_Pandas na prática: usando Python para análise de dados_
 
 Este repositório contém os arquivos utilizados no minicurso de introdução ao **Pandas**, ministrado por **Davi Reis Furtado** e **Gabriel de Almeida Dias**. O objetivo é apresentar os principais conceitos e comandos da biblioteca **Pandas**, amplamente utilizada para análise de dados em Python.
 
@@ -40,7 +42,7 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
   ```
 - DataFrame vazio com colunas definidas
   ```python
-  df = pd.DataFrame(columns=['column_b', 'column_a'])
+  df = pd.DataFrame(columns=['column_x', 'column_y'])
   ```
 
 ### 3. Leitura e Escrita de Arquivos
