@@ -40,17 +40,17 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
   ```
 - DataFrame vazio com colunas definidas
   ```python
-  df = pd.DataFrame(columns=['column1', 'column2'])
+  df = pd.DataFrame(columns=['column_b', 'column_a'])
   ```
 
 ### 3. Leitura e Escrita de Arquivos
 - Ler arquivos Excel
   ```python
-  pd.read_excel('arquivo.xlsx')
+  pd.read_excel('file.xlsx')
   ```
 - Exportar para Excel
   ```python
-  df.to_excel('nome_arquivo.xlsx', index=False)
+  df.to_excel('file_name.xlsx', index=False)
   ```
 
 ### 4. Visualização de Dados
@@ -58,7 +58,7 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
   ```python
   print(df)
   ```
-- Exibir DataFrame formatado (Jupyter Notebook)
+- Exibir DataFrame formatado (só no Jupyter Notebook)
   ```python
   display(df)
   ```
@@ -88,7 +88,7 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
   ```
 - Selecionar múltiplas colunas
   ```python
-  df[['column_a', 'column_b']]
+  df[['column_x', 'column_y']]
   ```
 - Média dos valores de uma coluna
   ```python
@@ -110,31 +110,31 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
 ### 6. Indexação com `.loc`
 - Selecionar uma linha específica
   ```python
-  df.loc[n]
+  df.loc[index]
   ```
 - Selecionar um intervalo de linhas
   ```python
-  df.loc[m:n]
+  df.loc[start_index:end_index]
   ```
 - Selecionar célula específica
   ```python
-  df.loc[n, 'column']
+  df.loc[index, 'column']
   ```
 - Selecionar linha com colunas específicas
   ```python
-  df.loc[n, ['column_a', 'column_b']]
+  df.loc[index, ['column_x', 'column_y']]
   ```
 - Selecionar com condição
   ```python
-  df.loc[df['column'] == valor]
+  df.loc[df['column'] == value]
   ```
 - Selecionar coluna com condição
   ```python
-  df.loc[df['column'] == valor, 'outra_coluna']
+  df.loc[df['column_x'] == value, 'column_y']
   ```
 - Selecionar múltiplas colunas com condição
   ```python
-  df.loc[df['column'] == valor, ['coluna1', 'coluna2']]
+  df.loc[df['column_x'] == value, ['column_y', 'column_z']]
   ```
 
 ### 7. Limpeza de Dados
@@ -152,7 +152,7 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
   df.drop(index, axis=0, inplace=True)  # remove linha - axis é opcional, o padrão é 0
   df.drop('column', axis=1, inplace=True)  # remove coluna
   ```
-- Tratar valores ausentes (`None`):
+- Tratar valores ausentes (`None`)
   ```python
   df.dropna(how='all', axis=1, inplace=True)  # remove colunas totalmente vazias
   df.dropna(how='any', inplace=True)  # remove linhas com pelo menos um valor vazio - Nesse caso 'how' é opcional, pois o padrão já é 'any'
@@ -161,22 +161,18 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
   ```
 
 ### 8. Manipulação de DataFrames
-- Juntar/concatenar DataFrames:
+- Juntar/concatenar DataFrames
   ```python
   new_df = pd.concat([df1, df2], ignore_index=True)
   ```
-- Mesclar DataFrames *parecidos*:
+- Mesclar DataFrames *parecidos*
   ```python
   df_merged = df1.merge(df2)
   ```
-- Agrupar dados:
+- Agrupar dados
   ```python
-  relatorio = df[['column1', 'column2']].groupby('column1').function()
+  grouped_x = df[['column_x', 'column_y']].groupby('column_x').function()  # alguns exemplos de .function() possíveis são: .sum()/.mean()/.max()/.min()
   ```
-  Alguns exemplos de `.function()` possíveis são: `.sum()/.mean()/.max()/.min()`
 
 ### 9. Dica útil
-Muitas funções do Pandas aceitam o argumento `inplace=True`, que aplica a modificação diretamente no DataFrame, sem precisar reatribuir:
-```python
-df.dropna(inplace=True)
-```
+Muitas funções do Pandas aceitam o argumento `inplace=True`, que aplica a modificação diretamente no DataFrame, sem precisar reatribuir
