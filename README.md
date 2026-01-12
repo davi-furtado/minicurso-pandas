@@ -1,10 +1,10 @@
 # 🐼 Pandas
 
+![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
+
 _Pandas na prática: usando Python para análise de dados_
 
 Este repositório contém os arquivos utilizados no minicurso de introdução ao **Pandas**, ministrado por **Davi Reis Furtado** e **Gabriel de Almeida Dias**. O objetivo é apresentar os principais conceitos e comandos da biblioteca **Pandas**, amplamente utilizada para análise de dados em Python.
-
----
 
 ## 👨🏽‍💻 Pré-requisitos
 Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramentas
