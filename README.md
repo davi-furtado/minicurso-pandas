@@ -1,26 +1,34 @@
-# 🐼 Pandas
+<div align="center">
+  <h1>🐼 Pandas</h1>
 
-![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)
-![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
-
-_Pandas na prática: usando Python para análise de dados_
+  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54">
+  <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white">
+  <img src="https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white">
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
+  
+  <p>
+    <i>Pandas na prática: usando Python para análise de dados</i>
+  </p>
+</div>
 
 Este repositório contém os arquivos utilizados no minicurso de introdução ao **Pandas**, ministrado por **Davi Reis Furtado** e **Gabriel de Almeida Dias**. O objetivo é apresentar os principais conceitos e comandos da biblioteca **Pandas**, amplamente utilizada para análise de dados em Python.
 
 ## 👨🏽‍💻 Pré-requisitos
+
 Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramentas
 
 ### 🧰 Ferramentas
+
 - Python
 - Visual Studio Code
 
 ### 🧩 Extensões para VS Code
-- Jupyter Notebook
-- Office Viewer
+
+- Jupyter Notebook (possibilita manipular _Jupyter Notebooks_ [arquivos `.ipynb`])
+- Office Viewer (opcional, possibilita visualizar arquivos `.xlsx` e `.xls`)
 
 ### 📦 Bibliotecas Python
+
 - `pandas`
 - `openpyxl`
 
@@ -29,12 +37,14 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
 ## 📚 Conteúdo do Minicurso
 
 ### 1. Introdução ao Pandas
-- Importar a biblioteca *pandas* e dando o apelido *pd*
+
+- Importar a biblioteca _pandas_ e dando o apelido _pd_
   ```python
   import pandas as pd
   ```
 
 ### 2. Criação de DataFrames
+
 - A partir de um dicionário
   ```python
   df = pd.DataFrame(dict)
@@ -49,6 +59,7 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
   ```
 
 ### 3. Leitura e Escrita de Arquivos
+
 - Ler arquivos Excel
   ```python
   pd.read_excel('file.xlsx')
@@ -59,6 +70,7 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
   ```
 
 ### 4. Visualização de Dados
+
 - Exibir DataFrame no terminal
   ```python
   print(df)
@@ -87,6 +99,7 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
   ```
 
 ### 5. Seleção de Dados
+
 - Selecionar uma coluna
   ```python
   df['column']
@@ -113,6 +126,7 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
   ```
 
 ### 6. Indexação com `.loc`
+
 - Selecionar uma linha específica
   ```python
   df.loc[index]
@@ -143,6 +157,7 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
   ```
 
 ### 7. Limpeza de Dados
+
 - Remover linhas duplicadas
   ```python
   df.drop_duplicates(inplace=True)
@@ -166,11 +181,12 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
   ```
 
 ### 8. Manipulação de DataFrames
+
 - Juntar/concatenar DataFrames
   ```python
   new_df = pd.concat([df1, df2], ignore_index=True)
   ```
-- Mesclar DataFrames *parecidos*
+- Mesclar DataFrames _parecidos_
   ```python
   df_merged = df1.merge(df2)
   ```
@@ -180,4 +196,5 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
   ```
 
 ### 9. Dica útil
+
 Muitas funções do Pandas aceitam o argumento `inplace=True`, que aplica a modificação diretamente no DataFrame, sem precisar reatribuir
