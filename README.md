@@ -198,3 +198,9 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
 ### 9. Dica útil
 
 Muitas funções do Pandas aceitam o argumento `inplace=True`, que aplica a modificação diretamente no DataFrame, sem precisar reatribuir
+
+---
+
+## Licença
+
+Este projeto está sob a licença **MIT**.
