@@ -4,7 +4,6 @@
   <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54">
   <img src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white">
   <img src="https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white">
-  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge">
   
   <p>
     <i>Pandas na prática: usando Python para análise de dados</i>
@@ -13,37 +12,37 @@
 
 Este repositório contém os arquivos utilizados no minicurso de introdução ao **Pandas**, ministrado por **Davi Reis Furtado** e **Gabriel de Almeida Dias**. O objetivo é apresentar os principais conceitos e comandos da biblioteca **Pandas**, amplamente utilizada para análise de dados em Python.
 
-## 👨🏽‍💻 Pré-requisitos
+# 👨🏽‍💻 Pré-requisitos
 
 Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramentas
 
-### 🧰 Ferramentas
+## 🧰 Ferramentas
 
 - Python
 - Visual Studio Code
 
-### 🧩 Extensões para VS Code
+## 🧩 Extensões para VS Code
 
 - Jupyter Notebook (possibilita manipular _Jupyter Notebooks_ [arquivos `.ipynb`])
 - Office Viewer (opcional, possibilita visualizar arquivos `.xlsx` e `.xls`)
 
-### 📦 Bibliotecas Python
+## 📦 Bibliotecas Python
 
 - `pandas`
 - `openpyxl`
 
 ---
 
-## 📚 Conteúdo do Minicurso
+# 📚 Conteúdo do Minicurso
 
-### 1. Introdução ao Pandas
+## 1. Introdução ao Pandas
 
 - Importar a biblioteca _pandas_ e dando o apelido _pd_
   ```python
   import pandas as pd
   ```
 
-### 2. Criação de DataFrames
+## 2. Criação de DataFrames
 
 - A partir de um dicionário
   ```python
@@ -58,7 +57,7 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
   df = pd.DataFrame(columns=['column_x', 'column_y'])
   ```
 
-### 3. Leitura e Escrita de Arquivos
+## 3. Leitura e Escrita de Arquivos
 
 - Ler arquivos Excel
   ```python
@@ -69,7 +68,7 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
   df.to_excel('file_name.xlsx', index=False)
   ```
 
-### 4. Visualização de Dados
+## 4. Visualização de Dados
 
 - Exibir DataFrame no terminal
   ```python
@@ -98,7 +97,7 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
   df.describe()
   ```
 
-### 5. Seleção de Dados
+## 5. Seleção de Dados
 
 - Selecionar uma coluna
   ```python
@@ -125,7 +124,7 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
   df['column'].value_counts()
   ```
 
-### 6. Indexação com `.loc`
+## 6. Indexação com `.loc`
 
 - Selecionar uma linha específica
   ```python
@@ -156,7 +155,7 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
   df.loc[df['column_x'] == value, ['column_y', 'column_z']]
   ```
 
-### 7. Limpeza de Dados
+## 7. Limpeza de Dados
 
 - Remover linhas duplicadas
   ```python
@@ -180,7 +179,7 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
   df.ffill(inplace=True)  # Preenche com o valor anterior
   ```
 
-### 8. Manipulação de DataFrames
+## 8. Manipulação de DataFrames
 
 - Juntar/concatenar DataFrames
   ```python
@@ -195,12 +194,12 @@ Antes de iniciar o minicurso, é necessário ter instalado as seguintes ferramen
   grouped_x = df[['column_x', 'column_y']].groupby('column_x').function()  # alguns exemplos de .function() possíveis são: .sum()/.mean()/.max()/.min()
   ```
 
-### 9. Dica útil
+## 9. Dica útil
 
 Muitas funções do Pandas aceitam o argumento `inplace=True`, que aplica a modificação diretamente no DataFrame, sem precisar reatribuir
 
 ---
 
-## Licença
+# Licença
 
 Este projeto está sob a licença **MIT**.
