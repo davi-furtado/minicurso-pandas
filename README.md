@@ -202,4 +202,4 @@ Muitas funções do Pandas aceitam o argumento `inplace=True`, que aplica a modi
 
 # Licença
 
-Este projeto está sob a licença **MIT**.
+Este projeto está sob a licença [MIT](/LICENSE).
