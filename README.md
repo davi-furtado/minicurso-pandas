@@ -7,7 +7,7 @@
 </div>
 
 <p align="right">
-  Pandas na prática: usando Python para análise de dados.
+  <i>Pandas na prática: usando Python para análise de dados.</i>
 </p>
 
 Este repositório contém os arquivos utilizados no minicurso de introdução ao **Pandas**, ministrado por **Davi Reis Furtado** e **Gabriel de Almeida Dias**. O objetivo é apresentar os principais conceitos e comandos da biblioteca **Pandas**, amplamente utilizada para análise de dados em Python.
